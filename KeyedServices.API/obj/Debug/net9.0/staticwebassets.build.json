@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "+hZY0gc69UdVw4IXa+wyoau76ty5KDJIZ7DLBKXmCUI=",
+  "Source": "KeyedServices.API",
+  "BasePath": "_content/KeyedServices.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

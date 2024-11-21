@@ -1,0 +1,221 @@
+2024-11-21 08:09:17.271 +05:30 [INF] Now listening on: https://localhost:7091
+2024-11-21 08:09:17.303 +05:30 [INF] Now listening on: http://localhost:5184
+2024-11-21 08:09:17.334 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-21 08:09:17.336 +05:30 [INF] Hosting environment: Development
+2024-11-21 08:09:17.336 +05:30 [INF] Content root path: C:\Users\navee\OneDrive\Desktop\KeyedServicesApp\KeyedServices.API
+2024-11-21 08:10:26.083 +05:30 [INF] Now listening on: https://localhost:7091
+2024-11-21 08:10:26.116 +05:30 [INF] Now listening on: http://localhost:5184
+2024-11-21 08:10:26.159 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-21 08:10:26.160 +05:30 [INF] Hosting environment: Development
+2024-11-21 08:10:26.161 +05:30 [INF] Content root path: C:\Users\navee\OneDrive\Desktop\KeyedServicesApp\KeyedServices.API
+2024-11-21 08:11:03.384 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5184/api/payment - null null
+2024-11-21 08:11:03.506 +05:30 [INF] HTTP GET /api/payment responded 307 in 1.1608 ms
+2024-11-21 08:11:03.522 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5184/api/payment - 307 0 null 143.716ms
+2024-11-21 08:11:03.583 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/payment - null null
+2024-11-21 08:11:03.614 +05:30 [INF] Executing endpoint 'KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API)'
+2024-11-21 08:11:03.638 +05:30 [INF] Route matched with {action = "Get", controller = "Payment"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller KeyedServices.API.Controllers.PaymentController (KeyedServices.API).
+2024-11-21 08:11:03.644 +05:30 [INF] Executed action KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API) in 1.9053ms
+2024-11-21 08:11:03.646 +05:30 [INF] Executed endpoint 'KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API)'
+2024-11-21 08:11:03.647 +05:30 [ERR] HTTP GET /api/payment responded 500 in 57.0366 ms
+System.InvalidOperationException: Unable to resolve service for type 'KeyedServices.API.Contracts.IPaymentServiceFactory' while attempting to activate 'KeyedServices.API.Controllers.PaymentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method2(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-11-21 08:11:03.652 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'KeyedServices.API.Contracts.IPaymentServiceFactory' while attempting to activate 'KeyedServices.API.Controllers.PaymentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method2(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-21 08:11:03.717 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/payment - 500 null text/html; charset=utf-8 134.0672ms
+2024-11-21 08:11:03.753 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - null null
+2024-11-21 08:11:03.754 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-21 08:11:03.803 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 13786 application/javascript; charset=utf-8 49.5889ms
+2024-11-21 08:11:03.837 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.804ms
+2024-11-21 08:11:03.864 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/favicon.ico - null null
+2024-11-21 08:11:03.868 +05:30 [INF] HTTP GET /favicon.ico responded 404 in 1.2903 ms
+2024-11-21 08:11:03.870 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/favicon.ico - 404 0 null 6.323ms
+2024-11-21 08:11:03.873 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7091/favicon.ico, Response status code: 404
+2024-11-21 08:12:00.240 +05:30 [INF] Now listening on: https://localhost:7091
+2024-11-21 08:12:00.279 +05:30 [INF] Now listening on: http://localhost:5184
+2024-11-21 08:12:00.308 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-21 08:12:00.309 +05:30 [INF] Hosting environment: Development
+2024-11-21 08:12:00.310 +05:30 [INF] Content root path: C:\Users\navee\OneDrive\Desktop\KeyedServicesApp\KeyedServices.API
+2024-11-21 08:12:09.952 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/payment - null null
+2024-11-21 08:12:10.071 +05:30 [INF] Executing endpoint 'KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API)'
+2024-11-21 08:12:10.095 +05:30 [INF] Route matched with {action = "Get", controller = "Payment"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller KeyedServices.API.Controllers.PaymentController (KeyedServices.API).
+2024-11-21 08:12:10.100 +05:30 [INF] Executed action KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API) in 1.6243ms
+2024-11-21 08:12:10.104 +05:30 [INF] Executed endpoint 'KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API)'
+2024-11-21 08:12:10.107 +05:30 [ERR] HTTP GET /api/payment responded 500 in 55.0422 ms
+System.InvalidOperationException: Unable to resolve service for type 'KeyedServices.API.Contracts.IPaymentServiceFactory' while attempting to activate 'KeyedServices.API.Controllers.PaymentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method2(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-11-21 08:12:10.114 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'KeyedServices.API.Contracts.IPaymentServiceFactory' while attempting to activate 'KeyedServices.API.Controllers.PaymentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method2(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-21 08:12:10.187 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/payment - 500 null text/html; charset=utf-8 236.4752ms
+2024-11-21 08:12:10.196 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - null null
+2024-11-21 08:12:10.198 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-21 08:12:10.274 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 13786 application/javascript; charset=utf-8 76.1336ms
+2024-11-21 08:12:10.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.239ms
+2024-11-21 08:12:34.382 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/payment - null null
+2024-11-21 08:12:34.391 +05:30 [INF] Executing endpoint 'KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API)'
+2024-11-21 08:12:34.394 +05:30 [INF] Route matched with {action = "Get", controller = "Payment"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller KeyedServices.API.Controllers.PaymentController (KeyedServices.API).
+2024-11-21 08:12:34.397 +05:30 [INF] Executed action KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API) in 1.0712ms
+2024-11-21 08:12:34.398 +05:30 [INF] Executed endpoint 'KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API)'
+2024-11-21 08:12:34.399 +05:30 [ERR] HTTP GET /api/payment responded 500 in 8.2208 ms
+System.InvalidOperationException: Unable to resolve service for type 'KeyedServices.API.Contracts.IPaymentServiceFactory' while attempting to activate 'KeyedServices.API.Controllers.PaymentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method2(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-11-21 08:12:34.403 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'KeyedServices.API.Contracts.IPaymentServiceFactory' while attempting to activate 'KeyedServices.API.Controllers.PaymentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method2(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-21 08:12:34.423 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/payment - 500 null text/html; charset=utf-8 41.1636ms
+2024-11-21 08:12:34.490 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-21 08:12:34.490 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/_vs/browserLink - null null
+2024-11-21 08:12:34.507 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_framework/aspnetcore-browser-refresh.js - 200 13786 application/javascript; charset=utf-8 16.9109ms
+2024-11-21 08:12:34.539 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.284ms
+2024-11-21 08:13:16.389 +05:30 [INF] Now listening on: https://localhost:7091
+2024-11-21 08:13:16.428 +05:30 [INF] Now listening on: http://localhost:5184
+2024-11-21 08:13:16.463 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-21 08:13:16.465 +05:30 [INF] Hosting environment: Development
+2024-11-21 08:13:16.465 +05:30 [INF] Content root path: C:\Users\navee\OneDrive\Desktop\KeyedServicesApp\KeyedServices.API
+2024-11-21 08:13:21.280 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5184/api/payment - null null
+2024-11-21 08:13:21.308 +05:30 [INF] HTTP GET /api/payment responded 307 in 1.8203 ms
+2024-11-21 08:13:21.326 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5184/api/payment - 307 0 null 45.5807ms
+2024-11-21 08:13:21.448 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7091/api/payment - null null
+2024-11-21 08:13:21.487 +05:30 [INF] Executing endpoint 'KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API)'
+2024-11-21 08:13:21.527 +05:30 [INF] Route matched with {action = "Get", controller = "Payment"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller KeyedServices.API.Controllers.PaymentController (KeyedServices.API).
+2024-11-21 08:13:21.535 +05:30 [INF] Executed action KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API) in 2.6904ms
+2024-11-21 08:13:21.536 +05:30 [INF] Executed endpoint 'KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API)'
+2024-11-21 08:13:21.537 +05:30 [ERR] HTTP GET /api/payment responded 500 in 84.0378 ms
+System.InvalidOperationException: Unable to resolve service for type 'KeyedServices.API.Contracts.IPaymentServiceFactory' while attempting to activate 'KeyedServices.API.Controllers.PaymentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method2(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-11-21 08:13:21.544 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'KeyedServices.API.Contracts.IPaymentServiceFactory' while attempting to activate 'KeyedServices.API.Controllers.PaymentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method2(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-21 08:13:21.570 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7091/api/payment - 500 null text/plain; charset=utf-8 121.3296ms
+2024-11-21 08:14:38.240 +05:30 [INF] Now listening on: https://localhost:7091
+2024-11-21 08:14:38.274 +05:30 [INF] Now listening on: http://localhost:5184
+2024-11-21 08:14:38.306 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-21 08:14:38.307 +05:30 [INF] Hosting environment: Development
+2024-11-21 08:14:38.308 +05:30 [INF] Content root path: C:\Users\navee\OneDrive\Desktop\KeyedServicesApp\KeyedServices.API
+2024-11-21 08:20:37.802 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5184/api/payment - null null
+2024-11-21 08:20:37.826 +05:30 [INF] HTTP GET /api/payment responded 307 in 2.0937 ms
+2024-11-21 08:20:37.838 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5184/api/payment - 307 0 null 39.8839ms
+2024-11-21 08:20:37.877 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7091/api/payment - null null
+2024-11-21 08:20:37.897 +05:30 [INF] Executing endpoint 'KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API)'
+2024-11-21 08:20:37.914 +05:30 [INF] Route matched with {action = "Get", controller = "Payment"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller KeyedServices.API.Controllers.PaymentController (KeyedServices.API).
+2024-11-21 08:20:37.921 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-21 08:20:37.930 +05:30 [INF] Executed action KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API) in 11.7058ms
+2024-11-21 08:20:37.933 +05:30 [INF] Executed endpoint 'KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API)'
+2024-11-21 08:20:37.934 +05:30 [INF] HTTP GET /api/payment responded 200 in 54.6769 ms
+2024-11-21 08:20:37.936 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7091/api/payment - 200 null application/json; charset=utf-8 59.2664ms
+2024-11-21 08:23:07.737 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5184/api/payment - null null
+2024-11-21 08:23:07.741 +05:30 [INF] HTTP GET /api/payment responded 307 in 0.0903 ms
+2024-11-21 08:23:07.742 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5184/api/payment - 307 0 null 5.1351ms
+2024-11-21 08:23:07.784 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7091/api/payment - null null
+2024-11-21 08:23:07.790 +05:30 [INF] Executing endpoint 'KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API)'
+2024-11-21 08:23:07.793 +05:30 [INF] Route matched with {action = "Get", controller = "Payment"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller KeyedServices.API.Controllers.PaymentController (KeyedServices.API).
+2024-11-21 08:28:12.614 +05:30 [INF] Now listening on: https://localhost:7091
+2024-11-21 08:28:12.646 +05:30 [INF] Now listening on: http://localhost:5184
+2024-11-21 08:28:12.701 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-21 08:28:12.702 +05:30 [INF] Hosting environment: Development
+2024-11-21 08:28:12.703 +05:30 [INF] Content root path: C:\Users\navee\OneDrive\Desktop\KeyedServicesApp\KeyedServices.API
+2024-11-21 08:28:15.109 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5184/api/payment - null null
+2024-11-21 08:28:15.131 +05:30 [INF] HTTP GET /api/payment responded 307 in 1.3366 ms
+2024-11-21 08:28:15.144 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5184/api/payment - 307 0 null 38.8346ms
+2024-11-21 08:28:15.188 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7091/api/payment - null null
+2024-11-21 08:28:15.208 +05:30 [INF] Executing endpoint 'KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API)'
+2024-11-21 08:28:15.228 +05:30 [INF] Route matched with {action = "Get", controller = "Payment"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller KeyedServices.API.Controllers.PaymentController (KeyedServices.API).
+2024-11-21 08:28:26.180 +05:30 [INF] [CreditCard] data-638677744952310373
+2024-11-21 08:28:26.189 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-21 08:28:26.195 +05:30 [INF] Executed action KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API) in 10964.2187ms
+2024-11-21 08:28:26.197 +05:30 [INF] Executed endpoint 'KeyedServices.API.Controllers.PaymentController.Get (KeyedServices.API)'
+2024-11-21 08:28:26.197 +05:30 [INF] HTTP GET /api/payment responded 200 in 11007.0040 ms
+2024-11-21 08:28:26.199 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7091/api/payment - 200 null application/json; charset=utf-8 11010.3525ms

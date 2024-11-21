@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "KeyedServices.API.Controllers.PaymentController",
+    "Method": "Get",
+    "RelativePath": "api/Payment",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
